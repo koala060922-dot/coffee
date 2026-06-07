@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/main-bg.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  color: #cc2a2a; 
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav div button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+nav div button.lang {
+  border: 1px solid #555;
+}
+
+nav div button:last-child {
+  background: #cc2a2a;
+  border: 1px solid #cc2a2a;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.header-content p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.add-email {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+
+.add-email input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.add-email button {
+  background-color: #cc2a2a;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.banner-content {
+  background: linear-gradient(135deg, #3a1c36 0%, #1a1118 100%);
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+.banner-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.banner-content button {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#banner > h2 {
+  margin-bottom: 15px;
+}
+
+.select-menu {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+}
+
+.select-menu option {
+  background-color: #222;
+}
+
+.membership-content {
+  background: linear-gradient(to right, #4c1b3f, #111111), url('images/member-bg.jpg') right center/cover no-repeat;
+  background-blend-mode: overlay;
+  padding: 50px 40px;
+  border-radius: 8px;
+}
+
+.membership-content h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.membership-content p {
+  color: #bbb;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.choice-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(180deg, #2a2542 0%, #1d1829 100%);
+  padding: 30px 20px;
+  border-radius: 8px;
+  position: relative;
+  height: 250px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.bean-img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+
+.bean-img img {
+  width: 100%;
+}
+
+#faq {
+  max-width: 800px;
+  margin-bottom: 120px;
+}
+
+.accordion li {
+  margin-bottom: 10px;
+}
+
+.accordion input[type="radio"] {
+  display: none; 
+}
+
+.accordion label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.accordion label::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.accordion .content {
+  background-color: #444444;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 0 0 4px 4px;
+}
+
+.accordion .content p {
+  padding: 20px 0;
+  color: #ddd;
+  font-size: 15px;
+  border-top: 1px solid #555;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+  content: '\00d7'; 
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 300px; 
+}
+
+.newsletter {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #151515;
+  padding: 60px 50px 30px;
+  border-top: 1px solid #222;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.col.left .footer-nav {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.col.left .footer-nav li {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #555;
+}
+
+.col.left .footer-nav li:last-child {
+  border-right: none;
+}
+
+.col.left .footer-nav a {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-info p {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.col.center h2, .col.right h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #eee;
+}
+
+.col.center h3 {
+  font-size: 24px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.col.center p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  color: #888;
+  font-size: 20px;
+}
+
+.col.right p {
+  margin-bottom: 10px;
+}
+
+.col.right a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.copyright {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright p {
+  color: #666;
+  font-size: 13px;
+}
